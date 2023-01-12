@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/csslearning/static/css/main.073c9b0a.css",
+    "main.js": "/csslearning/static/js/main.81490037.js",
+    "static/js/787.2e4b006c.chunk.js": "/csslearning/static/js/787.2e4b006c.chunk.js",
+    "static/media/logo.svg": "/csslearning/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/csslearning/index.html",
+    "main.073c9b0a.css.map": "/csslearning/static/css/main.073c9b0a.css.map",
+    "main.81490037.js.map": "/csslearning/static/js/main.81490037.js.map",
+    "787.2e4b006c.chunk.js.map": "/csslearning/static/js/787.2e4b006c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.81490037.js"
+  ]
+}
