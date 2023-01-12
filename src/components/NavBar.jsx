@@ -1,7 +1,8 @@
+import '../styles/NavBar.css';
 
 function NavBar() {
   return (
-    <div className=""> SOY EL navigator bar </div>
+    <div className="navbar"> SOY EL navigator bar </div>
   );
 }
 

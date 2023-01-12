@@ -1,7 +1,8 @@
+import "../styles/Editor.css"
 
 function Editor() {
   return (
-    <div className=""> SOY EL EDITOR </div>
+    <div className="editor">SOY EL EDITOR</div>
   );
 }
 

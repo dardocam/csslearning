@@ -1,7 +1,7 @@
-
+import "../styles/Target.css"
 function Target() {
   return (
-    <div className=""> SOY EL Target </div>
+    <div className="target"> SOY EL Target</div>
   );
 }
 

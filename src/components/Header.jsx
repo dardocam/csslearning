@@ -1,8 +1,11 @@
 import '../styles/Header.css';
+import SelectBattle from './SelectBattle'
 
 function Header() {
   return (
-    <div className="header"> SOY EL HEADER </div>
+    <div className="header">  
+      <SelectBattle />
+    </div>
   );
 }
 
