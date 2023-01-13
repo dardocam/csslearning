@@ -4,7 +4,6 @@ function SelectBattle() {
   const [ battle, setBattle ] = useState(1);
   const handleChange = (event) => {
     setBattle(event.target.value);
-    console.log(event.target.value);
   };
   return (
     <>
