@@ -2,7 +2,7 @@
   --height: 350px;
   --width: 480px;
   --navbarHeight: 30px;
-  --containerFlexHeightDesktop: 500px;
+  --containerFlexHeightDesktop: 600px;
 }
 html,
 body {
@@ -47,16 +47,14 @@ a {
 /* resoluciones mayores a 1280 píxeles (desktop) */
 @media screen and (min-width: 1280px) {
   .editor {
-    width: 33.33%;
-    height: var(--containerFlexHeightDesktop);
+    width: 40%;
   }
   .cm-theme{
-    transform: translate(0px,50px);
-    width: 30%;
-    height: 400px;
+    transform: translate(0px,30px);
+    width: 40%;
   }
   .output {
-    width: 33.33%;
+    width: 30%;
     height: var(--containerFlexHeightDesktop);
   }
   .iframe{
@@ -68,7 +66,7 @@ a {
     transform: translate(0px,50px); 
   }
   .target{
-    width: 33.33%;
+    width: 30%;
     height: var(--containerFlexHeightDesktop);
   }
   .imagenTarget{
