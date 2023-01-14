@@ -1,7 +1,22 @@
-import "../styles/Target.css"
+import "../styles/Target.css";
+import NavBar from "../components/NavBar";
+import { BattleContext } from "../context/BattleContext";
+import { useContext } from "react";
+
+
 function Target() {
+  const [battle] = useContext(BattleContext);
+
   return (
-    <div className="target"> SOY EL Target</div>
+    <div className="target">
+      <NavBar />
+      <img
+          id="imagenTarget"
+          className="imagenTarget"
+          alt=""
+          src={require(`../img/${battle}.png`)}
+        />
+    </div>
   );
 }
 

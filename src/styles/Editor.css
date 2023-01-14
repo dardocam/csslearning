@@ -1,11 +1,10 @@
-.editor {
-    min-width: var(--window-width);
-    flex-grow: 1;
+.editor{
+    background-color: black;
     display: flex;
     justify-content: center;
-    background-color: lightskyblue;
 }
 .cm-theme{
-    width: 600px;
     overflow: auto;
+    position: absolute;
+
 }

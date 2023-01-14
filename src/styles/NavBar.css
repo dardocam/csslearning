@@ -1,8 +1,11 @@
 .navbar {
-    color: grey;
-    width: 100%;
-    height: 35px;
-    background-color: darkblue;
     display: flex;
     align-items: center;
+    color: grey;
+    height: var(--navbarHeight);
+    background-color: darkblue;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
 }

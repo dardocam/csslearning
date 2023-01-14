@@ -1,21 +1,22 @@
 import "../styles/Editor.css";
 import CodeMirror from "@uiw/react-codemirror";
-import { html } from '@codemirror/lang-html';
-import { oneDark } from '@codemirror/theme-one-dark'
+import { html } from "@codemirror/lang-html";
+import { oneDark } from "@codemirror/theme-one-dark";
 // import { useState } from "react";
 import { ContentContext } from "../context/ContentContext";
 import { useContext } from "react";
+import NavBar from "../components/NavBar";
 
 function Editor() {
-  const [content,setContent] = useContext(ContentContext);
-
+  const [content, setContent] = useContext(ContentContext);
 
   return (
     <div id="editor" className="editor">
+      <NavBar tittle="editor" />
       <CodeMirror
         id="cm"
         // className={styles.code}
-        value= {content}
+        value={content}
         height="700px"
         // extensions={[css({ jsx: true })]}
         extensions={[html()]}
@@ -24,11 +25,9 @@ function Editor() {
         //   setContent(value);
         //   setCount(value.length);
         // }}
-        onChange={
-          (value)=>{
-            setContent(value);
-          }
-        }
+        onChange={(value) => {
+          setContent(value);
+        }}
       />
     </div>
   );

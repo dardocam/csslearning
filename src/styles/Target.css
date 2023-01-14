@@ -1,8 +1,8 @@
 .target{
-    min-width: var(--window-width);
-    flex-grow: 1;
     display: flex;
     justify-content: center;
-
-    background-color: lightblue;
+    background-color: lightgreen;
+}
+.imagenTarget{
+    position: absolute;
 }

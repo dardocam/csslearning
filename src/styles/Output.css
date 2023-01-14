@@ -1,12 +1,16 @@
-.output {
-    min-width: var(--window-width);
-    flex-grow: 1;
+.output{
     display: flex;
     justify-content: center;
-
     background-color: lightcoral;
 }
-.result{
-    width: 600px;
-    height: 600px;
+.iframe{
+    border: 0;
+    position: absolute;
+}
+.imagenDiff{
+    position: absolute;
+}
+.imagenDiff img {
+    width: var(--width);
+    height: var(--height);
 }
