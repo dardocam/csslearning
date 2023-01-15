@@ -81,6 +81,9 @@ a {
     width: 400px;
     height: 300px;
   }
+  .slide{
+    width: 10px;
+  }
 }
 /* resoluciones entre 640 píxeles y 1280 píxeles de ancho (tablets) */
 @media screen and (min-width: 640px) and (max-width: 1280px) {
@@ -122,6 +125,9 @@ a {
     width: 400px;
     height: 300px;
   }
+  .slide{
+    width: 10px;
+  }
 }
 /* resoluciones mayores a 1280 píxeles (desktop) */
 @media screen and (min-width: 1280px) {
@@ -159,5 +165,8 @@ a {
     transform: translate(0px,50px); 
     height: var(--height);
     width: var(--width);
+  }
+  .slide{
+    width: 100%;
   }
 }
