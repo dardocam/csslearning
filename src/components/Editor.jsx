@@ -53,12 +53,12 @@ function Editor() {
 
   return (
     <div id="editor" className="editor">
-      <NavBar tittle="editor" />
+      <NavBar tittle="editor" count={content.length} />
       <CodeMirror
         id="cm"
         // className={styles.code}
         value={content}
-        height="600px"
+        height="570px"
         // extensions={[css({ jsx: true })]}
         extensions={[html()]}
         theme={myTheme}

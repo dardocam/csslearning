@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 //diferentes props para el editor , para el output y para el target
 function NavBar(props) {
-  const { tittle } = props;
+  const { tittle, count } = props;
   const [checked, setChecked] = useContext(CheckedContext);
   const handleDiff = (e) => {
     setChecked(e.target.checked);
@@ -24,18 +24,40 @@ function NavBar(props) {
 
   return (
     <div className="navbar">
-      {tittle}
       {tittle === "output" ? (
-        <input
-          id="check"
-          type="checkbox"
-          name="checkboxDiff"
-          value=""
-          checked={checked}
-          onChange={handleDiff}
-        />
+        <div className="wrapper">
+          <h3>OUTPUT</h3>
+
+          <label htmlFor="check" className="diff">
+            Diff
+            <input
+              id="check"
+              className="check"
+              type="checkbox"
+              name="checkboxDiff"
+              value=""
+              checked={checked}
+              onChange={handleDiff}
+            />
+          </label>
+        </div>
       ) : (
-        "noo"
+        <></>
+      )}
+      {tittle === "editor" ? (
+        <div className="wrapper">
+          <h3>EDITOR</h3>
+          <h3>{count} carácteres</h3>
+        </div>
+      ) : (
+        <></>
+      )}
+      {tittle === "target" ? (
+        <div className="wrapper">
+          <h3>TARGET</h3>
+        </div>
+      ) : (
+        <></>
       )}
     </div>
   );

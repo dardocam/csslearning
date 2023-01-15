@@ -1,7 +1,6 @@
 .output{
     display: flex;
     justify-content: center;
-    background-color: lightcoral;
 }
 .iframe{
     border: 0;

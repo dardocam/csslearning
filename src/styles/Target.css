@@ -1,7 +1,6 @@
 .target{
     display: flex;
     justify-content: center;
-    background-color: lightgreen;
 }
 .imagenTarget{
     position: absolute;

@@ -10,6 +10,7 @@ function Output() {
 
   return (
     <div className="output">
+      <div className="linea"></div>
       <NavBar tittle="output" />
       <iframe title="output" srcDoc={content} className="iframe"></iframe>
       <div className="imagenDiff">

@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Editor from "./components/Editor";
 import Output from "./components/Output";
 import Target from "./components/Target";
+import Mensajes from "./components/Mensajes";
 import { ContentContext } from "./context/ContentContext";
 import { BattleContext } from "./context/BattleContext";
 import { CheckedContext } from "./context/CheckedContext";
@@ -33,6 +34,9 @@ function App() {
               <Editor />
               <Output />
               <Target />
+            </div>
+            <div className="footer">
+              <Mensajes />
             </div>
           </CheckedContext.Provider>
         </BattleContext.Provider>
